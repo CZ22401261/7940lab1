@@ -12,7 +12,7 @@ jobs:
        fetch-depth: 0
      - name: Deploy
      env:
-       HEROKU_API_KEY: ${{secrets.37aae3dd-f19a-456d-ac2e-55b2ab045b5b}}
+       HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
        HEROKU_APP_NAME: "protected-gorge-80241"
 Heroku app.
      run: git push -f
